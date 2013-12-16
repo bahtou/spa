@@ -1,0 +1,36 @@
+!!! 5
+//
+  spa.html
+  spa browser document
+
+html(lang="en")
+  head
+    // ie9+ rendering support for latest standards
+    meta(http-equiv="Content-Type", content="text/html; charset=ISO-8859-1")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    title SPA Starter
+
+    // third-party stylesheets
+
+    // stylesheets
+    link(rel="stylesheet", href="css/spa.css", type="text/css")
+    link(rel="stylesheet", href="css/spa.chat.css", type="text/css")
+    link(rel="stylesheet", href="css/spa.shell.css", type="text/css")
+
+    // third party javascript
+    script(src="js/jq/jquery-2.0.3.js")
+    script(src="js/jq/jquery.uriAnchor-1.1.3.js")
+
+    // spa javascript
+    script(src="js/spa.js")
+    script(src="js/spa.util.js")
+    script(src="js/spa.model.js")
+    script(src="js/spa.shell.js")
+    script(src="js/spa.chat.js")
+    script.
+      $(function() {
+        spa.initModule($('#spa'));
+        });
+
+  body
+    #spa

@@ -258,6 +258,23 @@ spa.shell = (function() {
   //-------------------- END EVENT HANDLERS --------------------
 
 
+  //---------------------- BEGIN CALLBACKS ---------------------
+  // Begin callback method /setChatAnchor/
+  // Example  : setChatAnchor( 'closed' )
+  // Purpose  : Change the chat component of the anchor
+  // Arguments:
+  //    * position_type - may be 'closed' or 'opened'
+  // Action   :
+  //    Changes the URI anchor parameter 'chat' to the requested
+  //    value if possible
+  // Returns  :
+  //    * true  - requested anchor part was updated
+  //    * false - requested anchor part was not updated
+  // Throws   : none
+  // End callback method /setChatAnchor/
+  //----------------------- END CALLBACKS ----------------------
+
+
   //------------------- BEGIN PUBLIC METHODS -------------------
   // Begin Public method /initModule/
   initModule = function ($container) {
